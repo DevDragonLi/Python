@@ -1,6 +1,7 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 所以，当你的源代码中包含中文的时候，在保存源代码时，就需要务必指定保存为UTF-8编码。当Python解释器读取源代码时，为了让它按UTF-8编码读取，我们通常在文件开头写上这两行
+
+# 当你的源代码中包含中文的时候，在保存源代码时，就需要务必指定保存为UTF-8编码。当Python解释器读取源代码时，为了让它按UTF-8编码读取，我们通常在文件开头写上
+
 import random
 
 teacher = 'DragonLi'
@@ -11,19 +12,20 @@ teacher = 'LFL'
 
 major = "long"  
 
-combinString = teacher + major   
+combinString = teacher + major   # 合并字符串
 
 print combinString
 
 number = 100
 print number
+
 numberTest = 99
 
 result =  (number >= numberTest)
 
 print result
 
-#  if判断 后面 : 不可少  它是从上往下判断，如果在某个判断上是True，把该判断对应的语句执行后，就忽略掉剩下的elif和else
+#  if判断 后面 : 不可少  它是从上往下判断，如果在某个判断上是True，把该判断对应的语句执行后，就忽略掉剩下的elif和else,内部代码需要缩进
 if numberTest == number:
 	print "equal"
 else:
@@ -36,7 +38,8 @@ while number ==10:  # while :
 result = (3 >2) and (3 > 1)
 
 
-# random.randint () 长生随机数
+# random.randint () ===  随机数
+
 numberRandom = random.randint(1,10)
 
 print numberRandom
@@ -54,6 +57,7 @@ print(test)
 '''  
 	多行注释   
 eg: test = 'DragonLi'
+
 Python解释器干了两件事情：
 
 在内存中创建了一个'DragonLi'的字符串；
@@ -73,7 +77,7 @@ print number //num
 
 #  ord :函数获取字符的整数表示  chr :函数把编码转换为对应的字符
 
-stringValue =  'Age: %s. Gender: %s' % (25, True)
+stringValue =  'Age: %s. Gender: %s' % (25, True)  # 占位符  %S
 print stringValue
 '''
 常见的占位符有：
