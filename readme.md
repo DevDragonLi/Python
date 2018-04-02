@@ -13,11 +13,14 @@
 
 
 
-## web Site 
+## Links & Resources
 
 - [python.org](https://docs.python.org/3/)
 
 - [liaoxuefeng](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+
+- [youtube_video](https://www.youtube.com/watch?v=1PC3etgLwVc&list=PLXO45tsB95cIRP5gCi8AlYwQ1uFO2aQBw)
+
 
 ![](./images/1.png)
 
