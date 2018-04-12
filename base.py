@@ -1,98 +1,60 @@
 # -*- coding: utf-8 -*-
-
-# 当你的源代码中包含中文的时候，在保存源代码时，就需要务必指定保存为UTF-8编码。当Python解释器读取源代码时，为了让它按UTF-8编码读取，我们通常在文件开头写上
+# 当你的源代码中包含中文的时候，在保存源代码时，就需要务必指定保存为UTF-8编码。
+#当Python解释器读取源代码时，为了让它按UTF-8编码读取，我们通常在文件开头写上
 
 import random
 
 teacher = 'DragonLi'
-
-print teacher
-
-teacher = 'LFL'
-
+# print teacher
 major = "long"  
+combinString = teacher + major 
+# print combinString
 
-combinString = teacher + major   # 合并字符串
+number,numberTest = 100,99
+# print (number >= numberTest) 2 **number   # 平方 -> `**`  
 
-print combinString
+result = (3 >2) and (3 > 1)  
+# 随机数 :random.randint ( 1, 10) 
+print random.randint(1,10)
 
-number = 100
-print number
+# 在Python中，等号=是赋值语句，可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量，例如：
+test = 123 # a是整数
+test = 'ABC' # a变为字符串
+print(test)
 
-numberTest = 99
+# 在Python中，通常用全部大写的变量名表示常量
+PAGE_NUMBER  = 20
+number,num = 16 , 3
+print number / num # 16 ÷ 3 = 5   
+print number //num # 16 包含5个3 
 
-result =  (number >= numberTest)
+#  ord :函数获取字符的整数表示  chr :函数把编码转换为对应的字符
 
-print result
+print 'Age: %s. Gender: %s' % (25, True) #常见的占位符有： %d	整数 %f	浮点数 %s	字符串 %x	十六进制整数
+
+
+condition = 1
+while condition < 10:
+	condition = condition + 1
+	print condition
 
 #  if判断 后面 : 不可少  它是从上往下判断，如果在某个判断上是True，把该判断对应的语句执行后，就忽略掉剩下的elif和else,内部代码需要缩进
+
 if numberTest == number:
 	print "equal"
 else:
 	print "not equal"
 
+for item in xrange(1,10,3):  #  第三个参数可以不填  ,步长 
+	print item  # 输出1 ,1 + 3 , 1+ 3 + 3
 
-while number ==10:  # while : 
-	print "equal"
-
-result = (3 >2) and (3 > 1)
-
-
-# random.randint () ===  随机数
-
-numberRandom = random.randint(1,10)
-
-print numberRandom
-
-
-number =  True + False
-print number
-
-# 在Python中，等号=是赋值语句，可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量，例如：
-test = 123 # a是整数
-print(test)
-test = 'ABC' # a变为字符串
-print(test)
-
-'''  
-	多行注释   
-eg: test = 'DragonLi'
-
-Python解释器干了两件事情：
-
-在内存中创建了一个'DragonLi'的字符串；
-
-在内存中创建了一个名为test的变量，并把它指向'DragonLi'。
-
-'''
-
-# 在Python中，通常用全部大写的变量名表示常量
-
-number = 10
-num = 3
-
-print number / num
-print number //num
-
-
-#  ord :函数获取字符的整数表示  chr :函数把编码转换为对应的字符
-
-stringValue =  'Age: %s. Gender: %s' % (25, True)  # 占位符  %S
-print stringValue
-'''
-常见的占位符有：
-
-%d	整数
-%f	浮点数
-%s	字符串
-%x	十六进制整数
-'''
 
 # list:Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素
 
 lists = ['xiaolong','xiaoming']
 
-print lists
+for item in lists:
+	print item   # 打印集合的元素  com + [ / ] 缩进 
 
 print len(lists) # 获取长度  ,索引下边从0开始
 
