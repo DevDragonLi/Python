@@ -15,7 +15,10 @@ print (absFuncType (-1019))
 def:依次写出函数名、括号、括号中的参数和冒号:
 然后，在缩进块中编写函数体，函数的返回值用return语句返回如果没有return语句，函数执行完毕后也会返回结果，只是结果为None
 '''
+number_Global = None  # 先定义为 None,后 global 修饰
+
 def testFunc(number1,number2):
+	global number_Global
 	if number2 + number1 > 10:
 		print "true"
 	else :
@@ -119,10 +122,19 @@ person('Adam', 45, gender='M', job='Engineer')  # dict
 extra = {'city': 'Beijing', 'job': 'Engineer'}
 person('Jack', 24, **extra)
 
-'''
-1.4.1 命名关键字
+''' 
+1.4.1 命名关键字  待完善
 		参数需要一个特殊分隔符*，*后面的参数被视为命名关键字参数
 		命名关键字参数必须传入参数名
 		命名关键字参数可以有缺省值，从而简化调用	
 '''
+
+
+'''
+外部模块安装 	: 
+	install numpy 	:   `sudo pip3 install numpy`
+	uninstall numpy	:	`sudo pip3 uninstall numpy`
+	upgrade			: 	`sudo pip3 install -U numpy`
+'''
+
 
